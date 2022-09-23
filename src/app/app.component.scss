@@ -1,13 +1,14 @@
-// Then import Bootstrap
 @import "./../../node_modules/bootstrap/scss/bootstrap";
 @import './variables.scss';
 
 
-.home {
-    display: flex;
+.base {
+    width: 100%;
     align-content: center;
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
+    padding: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 75px;
+    font-weight: bold;
     color: white; 
 }
