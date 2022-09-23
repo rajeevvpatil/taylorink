@@ -9,6 +9,7 @@ import { ArtistsComponent } from './artists/artists.component';
 import { AboutComponent } from './about/about.component';
 import { SpotlightComponent } from './gallery/spotlight/spotlight.component';
 import { StoreModule } from '@ngrx/store';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { StoreModule } from '@ngrx/store';
     GalleryComponent,
     ArtistsComponent,
     AboutComponent,
-    SpotlightComponent
+    SpotlightComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
