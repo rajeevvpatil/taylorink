@@ -11,3 +11,9 @@
     font-size: 20px;
     color: $color-white; 
 }
+
+.nav-option:hover {
+    transition-delay: 2s;
+    scale: 110%;
+    color: white;
+}
