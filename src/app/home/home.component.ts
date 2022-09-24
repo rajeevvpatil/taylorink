@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {BehaviorSubject} from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  navSelected = new BehaviorSubject<number>(0);
+  $navSelected = this.navSelected.asObservable();
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {;
   }
 
+  public tabChange(navIndex: number) {
+    this.navSelected.next(navIndex)
+  }
 }

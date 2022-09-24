@@ -4,5 +4,10 @@
 
 .home {
     width: 100%;
-    color: white 
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+    font-family: $master-font;
+    font-size: 20px;
+    color: $color-white; 
 }

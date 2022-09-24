@@ -1,1 +1,24 @@
-<div class="home"></div>
+<ul class="nav justify-content-center home">
+    <li class="nav-item">
+      <a class="nav-link" (click)="tabChange(0)">Studio</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" (click)="tabChange(1)">Artists</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="tabChange(2)">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="tabChange(3)">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"(click)="tabChange(4)">Contact</a>
+    </li>
+</ul>
+<div [ngSwitch]="$navSelected | async">
+    <app-studio *ngSwitchCase="0"></app-studio>
+    <app-artists *ngSwitchCase="1"></app-artists>
+    <app-gallery *ngSwitchCase="2"></app-gallery>
+    <app-about *ngSwitchCase="3"></app-about>
+    <app-contact *ngSwitchCase="4"></app-contact>
+</div>

@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { SpotlightComponent } from './gallery/spotlight/spotlight.component';
 import { StoreModule } from '@ngrx/store';
 import { ContactComponent } from './contact/contact.component';
+import { StudioComponent } from './studio/studio.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
     ArtistsComponent,
     AboutComponent,
     SpotlightComponent,
-    ContactComponent
+    ContactComponent,
+    StudioComponent
   ],
   imports: [
     BrowserModule,

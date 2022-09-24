@@ -7,8 +7,9 @@
     align-content: center;
     text-align: center;
     padding: 20px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: $master-font;
     font-size: 75px;
     font-weight: bold;
-    color: white; 
+    color: $color-white; 
+    position: fixed;
 }
