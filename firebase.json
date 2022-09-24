@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/taylorink",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
