@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "taylor-ink"
+  },
+  "targets": {
+    "taylor-ink": {
+      "hosting": {
+        "taylor-ink": [
+          "taylor-ink"
+        ]
+      }
+    }
   }
 }

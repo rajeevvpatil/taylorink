@@ -1,14 +1,28 @@
 @import "./../../node_modules/bootstrap/scss/bootstrap";
-@import './variables.scss';
-
+@import "./variables.scss";
 
 .base {
-    width: 100%;
-    align-content: center;
-    text-align: center;
-    padding: 20px;
-    font-family: $master-font;
-    font-size: 75px;
-    font-weight: bold;
-    color: $color-white; 
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+  font-family: $master-font;
+  font-size: 75px;
+  font-weight: bold;
+  color: $color-white;
+}
+
+.home {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+  font-family: $master-font;
+  font-size: 20px;
+  color: $color-white;
+}
+
+.nav-option:hover {
+  scale: 120%;
+  color: white;
 }
