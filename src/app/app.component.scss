@@ -1,5 +1,7 @@
 @import "./../../node_modules/bootstrap/scss/bootstrap";
 @import "./variables.scss";
+@import "~font-awesome/css/font-awesome.min.css";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 
 .base {
   width: 100%;
@@ -11,6 +13,11 @@
   font-weight: bold;
   color: $color-white;
   background-color: $color-black;
+  background-image: url("./../assets/background.jpg");
+  height: 1000px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .home {
@@ -21,6 +28,7 @@
   font-family: $master-font;
   font-size: 20px;
   color: $color-white;
+  font-weight: normal;
 }
 
 .nav-option {

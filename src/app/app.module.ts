@@ -14,6 +14,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { SETTINGS as FIRESTORE_SETTINGS } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { environment } from '../environments/environment';
     StoreModule.forRoot({}, {}),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
+    FontAwesomeModule,
   ],
   providers: [
     {
