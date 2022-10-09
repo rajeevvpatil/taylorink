@@ -1,53 +1,59 @@
-<body class="base">
-  TAYLOR INK
-</body>
 <head>
   <!-- our project just needs Font Awesome Solid + Brands -->
   <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
 </head>
-<body>
+<body class="base">
+  TAYLOR INK
   <i class="fa-solid fa-user"></i>
   <!-- uses solid style -->
   <i class="fa-brands fa-github-square"></i>
   <!-- uses brand style -->
-  <nav class="nav justify-content-center home">
-    <!-- <div class="nav justify-content-center home"> -->
-    <li class="nav-item">
-      <a class="nav-link nav-option" routerLink="/studio">Studio</a>
-    </li>
-    <li class="nav-item">
-      <a
-        class="nav-link nav-option"
-        (click)="tabChange(1)"
-        routerLink="/artists"
-        >Artists</a
-      >
-    </li>
-    <li class="nav-item">
-      <a
-        class="nav-link nav-option"
-        (click)="tabChange(2)"
-        routerLink="/gallery"
-        >Gallery</a
-      >
-    </li>
-    <li class="nav-item">
-      <a class="nav-link nav-option" (click)="tabChange(3)" routerLink="/about"
-        >About</a
-      >
-    </li>
-    <li class="nav-item">
-      <a
-        class="nav-link nav-option"
-        (click)="tabChange(4)"
-        routerLink="/contact"
-        >Contact</a
-      >
-    </li>
-    <!-- </div> -->
-  </nav>
-  <router-outlet></router-outlet>
+  <div class="home">
+    <nav
+      class="nav justify-content-center nav-pills mb-3"
+      id="pills-tab"
+      role="tablist"
+    >
+      <!-- <div class="nav justify-content-center home"> -->
+      <li class="nav-item">
+        <a class="nav-link nav-option" routerLink="/studio">Studio</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-option"
+          (click)="tabChange(1)"
+          routerLink="/artists"
+          >Artists</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-option"
+          (click)="tabChange(2)"
+          routerLink="/gallery"
+          >Gallery</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-option"
+          (click)="tabChange(3)"
+          routerLink="/about"
+          >About</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-option"
+          (click)="tabChange(4)"
+          routerLink="/contact"
+          >Contact</a
+        >
+      </li>
+      <!-- </div> -->
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
 </body>
-<router-outlet></router-outlet>

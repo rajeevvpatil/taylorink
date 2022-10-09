@@ -10,6 +10,7 @@
   font-size: 75px;
   font-weight: bold;
   color: $color-white;
+  background-color: $color-black;
 }
 
 .home {
@@ -22,7 +23,15 @@
   color: $color-white;
 }
 
+.nav-option {
+  color: $color-white;
+}
+
 .nav-option:hover {
-  scale: 120%;
+  scale: 110%;
   color: white;
+}
+
+.nav-link:active {
+  color: white !important;
 }
