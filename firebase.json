@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/src",
+    "public": "dist/taylor-ink",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
