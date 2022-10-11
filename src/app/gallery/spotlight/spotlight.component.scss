@@ -1,8 +1,12 @@
+@import "./../../variables.scss";
+
 .image {
   border-radius: 5%;
 }
 
 ::ng-deep.mat-dialog-container {
-  padding: 0px !important;
+  max-height: 90% !important;
+  background-color: $color-black;
+  padding: 8px !important;
   border-radius: 5%;
 }
