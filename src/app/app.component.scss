@@ -8,6 +8,8 @@
   align-content: center;
   text-align: center;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
   font-family: $master-font;
   color: $color-white;
   background-color: $color-black;
@@ -19,8 +21,12 @@
 }
 
 .title {
-  font-size: 90px;
+  align-content: center;
+  text-align: center;
+  font-size: 75px;
   font-weight: bold;
+  border-bottom: 2px solid $color-white;
+  border-top: 2px solid $color-white;
 }
 
 .home {
