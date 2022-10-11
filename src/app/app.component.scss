@@ -9,15 +9,18 @@
   text-align: center;
   padding: 20px;
   font-family: $master-font;
-  font-size: 75px;
-  font-weight: bold;
   color: $color-white;
   background-color: $color-black;
   background-image: url("./../assets/background.jpg");
-  height: 1000px; /* You must set a specified height */
+  height: 1100px; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.title {
+  font-size: 90px;
+  font-weight: bold;
 }
 
 .home {
@@ -42,4 +45,19 @@
 
 .nav-link:active {
   color: white !important;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  padding: 16px;
+  font-size: 32px;
+  width: 100;
+  text-decoration: none;
+  color: $color-white;
 }

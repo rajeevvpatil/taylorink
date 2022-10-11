@@ -15,6 +15,9 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { SETTINGS as FIRESTORE_SETTINGS } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     FontAwesomeModule,
+    NgbModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     {

@@ -1,7 +1,39 @@
+@import "./../variables.scss";
+@import "./../../../node_modules/bootstrap/scss/bootstrap";
+
 .gallery {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  align-items: center;
+  overflow: auto;
 }
 
 .item {
-  flex: 1;
+  padding: 8px;
+  align-self: center;
+  flex: auto;
+  max-width: 33%;
+}
+
+.thumbnail {
+  :hover {
+    transition: 0.5s ease;
+    opacity: 50%;
+  }
+}
+
+.thumbnail:hover .overlay {
+  opacity: 0.8;
+}
+
+img {
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+  border-radius: 5%;
+
+  :hover {
+    opacity: 0.8;
+  }
 }

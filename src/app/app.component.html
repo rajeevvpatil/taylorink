@@ -5,14 +5,13 @@
   <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
 </head>
 <body class="base">
-  TAYLOR INK
   <div class="home">
+    <div class="title">TAYLOR INK</div>
     <nav
       class="nav justify-content-center nav-pills mb-3"
       id="pills-tab"
       role="tablist"
     >
-      <!-- <div class="nav justify-content-center home"> -->
       <li class="nav-item">
         <a class="nav-link nav-option" routerLink="/studio">Studio</a>
       </li>
@@ -48,8 +47,18 @@
           >Contact</a
         >
       </li>
-      <!-- </div> -->
     </nav>
-    <router-outlet></router-outlet>
+    <div class="content"><router-outlet></router-outlet></div>
+  </div>
+  <div class="footer">
+    <a class="social" href="https://www.instagram.com/thuyhau_artist/">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a class="social" href="https://www.facebook.com/thuyhauartist">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a class="social" href="https://www.yelp.com/biz/taylor-ink-san-jose">
+      <i class="fa-brands fa-yelp"></i>
+    </a>
   </div>
 </body>

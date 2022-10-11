@@ -9,32 +9,32 @@ import { StudioComponent } from './studio/studio.component';
 const routes: Routes = [
   {
     path: '',
-    component: ArtistsComponent
+    component: ContactComponent,
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
   },
   {
     path: 'artists',
-    component: ArtistsComponent
+    component: ArtistsComponent,
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: ContactComponent,
   },
   {
     path: 'gallery',
-    component: GalleryComponent
+    component: GalleryComponent,
   },
   {
     path: 'studio',
-    component: StudioComponent
-  }
+    component: StudioComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

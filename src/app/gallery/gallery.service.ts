@@ -7,12 +7,11 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 export class GalleryService {
   constructor(private db: AngularFirestore) {}
 
-  getAllImages() {
-    return new Promise<any>((resolve) => {
-      this.db
-        .collection('images')
-        .valueChanges({ idField: 'id' })
-        .subscribe((users) => resolve(users));
-    });
+  public populateFileNames() {
+    let fileNameArray: string[] = [];
+    for (let fileIndex = 1; fileIndex <= 14; fileIndex++) {
+      fileNameArray.push('./../../assets/imgs/' + fileIndex + '.jpg');
+    }
+    return fileNameArray;
   }
 }
