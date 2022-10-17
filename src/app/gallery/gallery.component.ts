@@ -21,9 +21,8 @@ export class GalleryComponent implements OnInit {
   }
 
   public openImage(fileName: string) {
-    console.log('Open Image', fileName);
     this.dialog.open(SpotlightComponent, {
-      data: { fileName: fileName },
+      data: { fileName: fileName, panelClass: 'size' },
     });
   }
 }

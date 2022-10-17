@@ -2,10 +2,11 @@
 
 .image {
   border-radius: 5%;
+  max-height: 1000px;
 }
 
 ::ng-deep.mat-dialog-container {
-  max-height: 90% !important;
+  max-height: 70% !important;
   background-color: $color-black;
   padding: 8px !important;
   border-radius: 5%;
