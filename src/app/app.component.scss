@@ -7,7 +7,6 @@
   width: 100%;
   align-content: center;
   text-align: center;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   font-family: $master-font;
@@ -23,41 +22,64 @@
 .title {
   align-content: center;
   text-align: center;
-  font-size: 75px;
-  font-weight: bold;
-  border-bottom: 2px solid $color-white;
-  border-top: 2px solid $color-white;
+  border-bottom: 1px solid $color-white;
+  width: 100%;
+  padding: 10px;
+}
+
+.logo {
+  max-height: 100px;
+}
+
+.banner {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
 }
 
 .home {
   width: 100%;
   align-content: center;
   text-align: center;
-  padding: 20px;
   font-family: $master-font;
   font-size: 20px;
   color: $color-white;
   font-weight: normal;
 }
 
+.nav {
+  border-bottom: 1px solid $color-white;
+  background-color: $color-black;
+}
+
 .nav-option {
   color: $color-white;
+  font-size: 16px;
 }
 
 .nav-option:hover {
-  scale: 110%;
-  color: white;
+  scale: 100%;
+  color: $color-aqua;
+  border: $master-border;
 }
 
 .nav-link:active {
-  color: white !important;
+  color:  $color-aqua !important;
 }
+
+.nav-option:active {
+  color: $color-aqua !important;
+}
+
 
 .footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  :hover {
+    color: $color-aqua
+  }
 }
 
 .social {
@@ -66,4 +88,8 @@
   width: 100;
   text-decoration: none;
   color: $color-white;
+
+  :hover {
+    color: $color-aqua
+  }
 }

@@ -3,24 +3,34 @@
   <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body class="base">
   <div class="home">
-    <div class="title">TAYLOR INK</div>
+    <div class="title">
+      <img
+          src="./../assets/logo.png"
+          alt="..."
+          class="logo"
+      />
+      <div class="banner">
+        PREMIUM TATTOOS
+      </div>
+    </div>
     <nav
       class="nav justify-content-center nav-pills mb-3"
       id="pills-tab"
       role="tablist"
     >
       <li class="nav-item">
-        <a class="nav-link nav-option" routerLink="/studio">Studio</a>
+        <a class="nav-link nav-option" routerLink="/studio">STUDIO</a>
       </li>
       <li class="nav-item">
         <a
           class="nav-link nav-option"
           (click)="tabChange(1)"
           routerLink="/artists"
-          >Artists</a
+          >ARTISTS</a
         >
       </li>
       <li class="nav-item">
@@ -28,7 +38,7 @@
           class="nav-link nav-option"
           (click)="tabChange(2)"
           routerLink="/gallery"
-          >Gallery</a
+          >GALLERY</a
         >
       </li>
       <li class="nav-item">
@@ -36,7 +46,7 @@
           class="nav-link nav-option"
           (click)="tabChange(3)"
           routerLink="/about"
-          >About</a
+          >ABOUT</a
         >
       </li>
       <li class="nav-item">
@@ -44,7 +54,7 @@
           class="nav-link nav-option"
           (click)="tabChange(4)"
           routerLink="/contact"
-          >Contact</a
+          >CONTACT</a
         >
       </li>
     </nav>
