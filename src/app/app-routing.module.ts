@@ -9,7 +9,7 @@ import { StudioComponent } from './studio/studio.component';
 const routes: Routes = [
   {
     path: '',
-    component: ContactComponent,
+    component: GalleryComponent,
   },
   {
     path: 'about',
