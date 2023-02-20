@@ -1,7 +1,9 @@
+@import "./../variables.scss";
+
 .artist-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
   justify-content: center;
 }
 
@@ -14,7 +16,10 @@
 }
 
 .desc {
+  width: 70%;
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 22x;
+  // font-style: italic;
+  font-family: 'Handwitten';
   padding: 0 10% 0 10%;
 }

@@ -12,6 +12,7 @@
   "dependencies": {
     "@angular/animations": "~15.1.0",
     "@angular/cdk": "~15.1.0",
+    "@angular/cli": "^15.1.6",
     "@angular/common": "~15.1.0",
     "@angular/compiler": "~15.1.0",
     "@angular/core": "~15.1.0",
@@ -31,15 +32,17 @@
     "angular-instafeed": "^1.8.3",
     "angular-super-gallery": "^2.2.8",
     "bootstrap": "^5.2.1",
+    "crypto-browserify": "^3.12.0",
     "firebase": "9.9.4",
     "font-awesome": "^4.7.0",
     "rxjs": "~6.6.0",
+    "stream-browserify": "^3.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.1.1",
-    "@angular/cli": "~12.2.1",
+    "@angular/cli": "^15.1.6",
     "@angular/compiler-cli": "~15.1.0",
     "@angular/fire": "^7.5.0",
     "@fortawesome/fontawesome-free": "^6.2.0",
@@ -52,7 +55,8 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "prettier": "^2.7.1",
-    "typescript": "~4.9.4"
+    "typescript": "~4.9.4",
+    "typewriter-effect": "^2.19.0"
   },
   "browser": {
     "fs": false,

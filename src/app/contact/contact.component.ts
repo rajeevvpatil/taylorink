@@ -8,5 +8,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class ContactComponent implements OnInit {
   constructor() {}
 
+
   ngOnInit(): void {}
 }

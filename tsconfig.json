@@ -20,7 +20,11 @@
       "es2018",
       "dom"
     ],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "crypto":["node_modules/crypto-browserify"],
+      "stream":["node_modules/stream-browserify"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

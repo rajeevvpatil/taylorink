@@ -31,7 +31,8 @@
               "src/styles.scss",
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
-            "scripts": ["node_modules/@fortawesome/fontawesome-free/js/all.js"]
+            "scripts": ["node_modules/@fortawesome/fontawesome-free/js/all.js"],
+            "allowedCommonJsDependencies": ["crypto"]
           },
           "configurations": {
             "production": {
@@ -113,5 +114,8 @@
       }
     }
   },
-  "defaultProject": "taylor-ink"
+  "defaultProject": "taylor-ink",
+  "cli": {
+    "analytics": false
+  }
 }

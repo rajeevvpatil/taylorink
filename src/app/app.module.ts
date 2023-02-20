@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ArtistsComponent } from './artists/artists.component';
-import { AboutComponent } from './about/about.component';
 import { SpotlightComponent } from './gallery/spotlight/spotlight.component';
 import { StoreModule } from '@ngrx/store';
 import { ContactComponent } from './contact/contact.component';
@@ -24,7 +23,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     GalleryComponent,
     ArtistsComponent,
-    AboutComponent,
     SpotlightComponent,
     ContactComponent,
     StudioComponent,

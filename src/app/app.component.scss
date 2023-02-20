@@ -22,7 +22,7 @@
 .title {
   align-content: center;
   text-align: center;
-  border-bottom: 1px solid $color-white;
+  border-bottom: $master-border;
   width: 100%;
   padding: 10px;
 }
@@ -48,7 +48,7 @@
 }
 
 .nav {
-  border-bottom: 1px solid $color-white;
+  border-bottom: $master-border;
   background-color: $color-black;
 }
 
