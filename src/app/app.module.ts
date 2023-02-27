@@ -17,7 +17,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule} from '@angular/common/http';
-import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { GalleryModule } from 'ng-gallery';
 import { GALLERY_CONFIG } from 'ng-gallery';
 import { LightboxModule } from  'ng-gallery/lightbox';
@@ -44,7 +43,6 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatTabsModule,
     BrowserAnimationsModule,
     HttpClientModule, 
-    NgxGalleryModule,
     GalleryModule,
     LightboxModule
   ],
