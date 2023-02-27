@@ -19,48 +19,22 @@
         PREMIUM TATTOOS
       </div>
     </div>
-    <nav
-      class="nav justify-content-center nav-pills mb-3"
-      id="pills-tab"
-      role="tablist"
-    >
-      <!-- <li class="nav-item">
-        <a class="nav-link nav-option" routerLink="/studio">STUDIO</a>
-      </li> -->
-      <li class="nav-item">
-        <a
-          class="nav-link nav-option"
-          (click)="tabChange(1)"
-          routerLink="/artists"
-          >ARTISTS</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link nav-option"
-          (click)="tabChange(2)"
-          routerLink="/gallery"
-          >GALLERY</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link nav-option"
-          (click)="tabChange(3)"
-          routerLink="/studio"
-          >ABOUT</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link nav-option"
-          (click)="tabChange(4)"
-          routerLink="/contact"
-          >CONTACT</a
-        >
-      </li>
-    </nav>
-    <div class="content"><router-outlet></router-outlet></div>
+    <mat-tab-group class="nav tabs" animationDuration="200ms"
+      mat-stretch-tabs="false" mat-align-tabs="center"
+      [color]="'white'">
+        <mat-tab label="ARTISTS">  
+          <app-artists></app-artists>
+        </mat-tab>
+        <mat-tab label="GALLERY">
+          <app-gallery></app-gallery>
+        </mat-tab>
+        <mat-tab label="STUDIO">
+          <app-studio></app-studio>
+        </mat-tab>
+        <mat-tab label="CONTACT">
+          <app-contact></app-contact>
+        </mat-tab>
+    </mat-tab-group>
   </div>
   <div class="footer">
     <a class="social" href="https://www.instagram.com/thuyhau_artist/">

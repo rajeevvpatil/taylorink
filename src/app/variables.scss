@@ -4,3 +4,5 @@ $color-aqua: #43dbd4;
 $master-font: 'Comfortaa';
 $hand-written-font: 'Handwitten';
 $master-border: 1px solid $color-aqua;
+$vertical-black-background: linear-gradient(transparent, $color-black, $color-black, $color-black, transparent);
+$horizontal-black-background: linear-gradient(to right,transparent, $color-black, transparent);

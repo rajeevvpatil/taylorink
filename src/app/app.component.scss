@@ -25,6 +25,7 @@
   border-bottom: $master-border;
   width: 100%;
   padding: 10px;
+  background: $horizontal-black-background;
 }
 
 .logo {
@@ -48,13 +49,13 @@
 }
 
 .nav {
-  border-bottom: $master-border;
   background-color: $color-black;
+  background: $horizontal-black-background;
 }
 
 .nav-option {
   color: $color-white;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -71,15 +72,38 @@
   color: $color-aqua !important;
 }
 
+.mat-tab-group {
+  margin: 48px;
+  background-color: $color-black;
+}
+
+::ng-deep .mdc-tab__text-label{
+  color:white !important;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+:host ::ng-deep .mdc-tab--active {
+  border: $master-border;
+  background-color: $color-black;
+}
+
 
 .footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 16px;
+  border-top: $master-border;
+  border-bottom: $master-border;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   :hover {
     color: $color-aqua
   }
+  background: $horizontal-black-background;
 }
 
 .social {

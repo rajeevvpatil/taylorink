@@ -1,8 +1,19 @@
-<div class="gallery">
-  <div *ngFor="let file of files" class="item">
-    <div (click)="openImage(file)" class="thumbnail">
-      <img src="{{ file }}" class="d-block w-100" alt="..." />
+<mat-tab-group class="gallery tabs" animationDuration="1000ms"
+  mat-stretch-tabs="false" mat-align-tabs="center"
+  [color]="'white'">
+    <mat-tab label="Black and Grey">  
+      <div class="container" gallerize="G1">
+      <img *ngFor="let srcPath of files[TattooType.BNW]" src="{{srcPath}}">
     </div>
-  </div>
-  <!-- Button trigger modal -->
-</div>
+  </mat-tab>
+    <mat-tab label="Color">
+      <div class="container" gallerize="G2">
+        <img *ngFor="let srcPath of files[TattooType.COLOR]" src="{{srcPath}}">
+      </div>
+    </mat-tab>
+    <mat-tab label="Cover-ups and Touch-ups">
+      <div class="container" gallerize="G3">
+        <img *ngFor="let srcPath of files[TattooType.TOUCH]" src="{{srcPath}}">
+      </div>
+    </mat-tab>
+</mat-tab-group>

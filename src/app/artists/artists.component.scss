@@ -5,6 +5,11 @@
   flex-direction: row;
   flex-wrap:nowrap;
   justify-content: center;
+  background: $horizontal-black-background;
+  border-top: $master-border;
+  border-bottom: $master-border;
+  max-height: 65vh;
+  overflow: auto;
 }
 
 .image-wrapper {
@@ -17,9 +22,8 @@
 
 .desc {
   width: 70%;
-  margin-top: 30px;
+  margin-top: 70px;
   font-size: 22x;
-  // font-style: italic;
   font-family: 'Handwitten';
   padding: 0 10% 0 10%;
 }
